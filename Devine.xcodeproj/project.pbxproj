@@ -13,6 +13,8 @@
 		B40677CB1CBA9274008C1E3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B40677C91CBA9274008C1E3E /* Main.storyboard */; };
 		B40677CD1CBA9274008C1E3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B40677CC1CBA9274008C1E3E /* Assets.xcassets */; };
 		B40677D01CBA9274008C1E3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B40677CE1CBA9274008C1E3E /* LaunchScreen.storyboard */; };
+		B40677D91CBA94E2008C1E3E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B40677D71CBA94E2008C1E3E /* Alamofire.framework */; };
+		B40677DA1CBA94E2008C1E3E /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B40677D81CBA94E2008C1E3E /* SwiftyJSON.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		B40677CC1CBA9274008C1E3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B40677CF1CBA9274008C1E3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B40677D11CBA9274008C1E3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B40677D71CBA94E2008C1E3E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		B40677D81CBA94E2008C1E3E /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B40677D91CBA94E2008C1E3E /* Alamofire.framework in Frameworks */,
+				B40677DA1CBA94E2008C1E3E /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +46,8 @@
 		B40677B71CBA9274008C1E3E = {
 			isa = PBXGroup;
 			children = (
+				B40677D71CBA94E2008C1E3E /* Alamofire.framework */,
+				B40677D81CBA94E2008C1E3E /* SwiftyJSON.framework */,
 				B40677C21CBA9274008C1E3E /* Devine */,
 				B40677C11CBA9274008C1E3E /* Products */,
 			);
@@ -77,6 +85,7 @@
 				B40677BC1CBA9274008C1E3E /* Sources */,
 				B40677BD1CBA9274008C1E3E /* Frameworks */,
 				B40677BE1CBA9274008C1E3E /* Resources */,
+				B40677DB1CBA94F3008C1E3E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -132,6 +141,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B40677DB1CBA94F3008C1E3E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B40677BC1CBA9274008C1E3E /* Sources */ = {
@@ -255,6 +282,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Devine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = solutions.mve.Devine;
@@ -266,6 +297,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Devine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = solutions.mve.Devine;
