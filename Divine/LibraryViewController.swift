@@ -1,6 +1,6 @@
 //
 //  LibraryViewController.swift
-//  Devine
+//  divine
 //
 //  Created by Marc van Eyken on 2016-04-10.
 //  Copyright © 2016 MVE Solutiions Inc. All rights reserved.
@@ -58,7 +58,7 @@ class LibraryViewController: UIViewController {
     }
 
     func displayMessage(message: String) {
-        let alertView = UIAlertController(title: "Devine Grief", message: message, preferredStyle: .Alert)
+        let alertView = UIAlertController(title: "divine Grief", message: message, preferredStyle: .Alert)
         alertView.addAction(UIAlertAction(title: "Ok", style: .Default, handler: nil))
         presentViewController(alertView, animated: true, completion: nil)
     }

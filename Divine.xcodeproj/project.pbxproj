@@ -18,10 +18,11 @@
 		B4C4F7521CBAB56200306067 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C4F7511CBAB56200306067 /* Preferences.swift */; };
 		B4C4F7541CBADCF000306067 /* Script.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C4F7531CBADCF000306067 /* Script.swift */; };
 		B4C4F7561CBADE2E00306067 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C4F7551CBADE2E00306067 /* Question.swift */; };
+		B4D956F51CBB1E0100E7F9EE /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4D956F41CBB1E0100E7F9EE /* SQLite.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B40677C01CBA9274008C1E3E /* Devine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Devine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B40677C01CBA9274008C1E3E /* divine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = divine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B40677C31CBA9274008C1E3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B40677C51CBA9274008C1E3E /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
 		B40677C71CBA9274008C1E3E /* ScriptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptViewController.swift; sourceTree = "<group>"; };
@@ -34,6 +35,7 @@
 		B4C4F7511CBAB56200306067 /* Preferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Preferences.swift; path = Models/Preferences.swift; sourceTree = "<group>"; };
 		B4C4F7531CBADCF000306067 /* Script.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Script.swift; path = Models/Script.swift; sourceTree = "<group>"; };
 		B4C4F7551CBADE2E00306067 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Question.swift; path = Models/Question.swift; sourceTree = "<group>"; };
+		B4D956F41CBB1E0100E7F9EE /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = Carthage/Build/iOS/SQLite.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B40677D91CBA94E2008C1E3E /* Alamofire.framework in Frameworks */,
+				B4D956F51CBB1E0100E7F9EE /* SQLite.framework in Frameworks */,
 				B40677DA1CBA94E2008C1E3E /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,9 +55,10 @@
 		B40677B71CBA9274008C1E3E = {
 			isa = PBXGroup;
 			children = (
+				B4D956F41CBB1E0100E7F9EE /* SQLite.framework */,
 				B40677D71CBA94E2008C1E3E /* Alamofire.framework */,
 				B40677D81CBA94E2008C1E3E /* SwiftyJSON.framework */,
-				B40677C21CBA9274008C1E3E /* Devine */,
+				B40677C21CBA9274008C1E3E /* divine */,
 				B40677C11CBA9274008C1E3E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,12 +66,12 @@
 		B40677C11CBA9274008C1E3E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B40677C01CBA9274008C1E3E /* Devine.app */,
+				B40677C01CBA9274008C1E3E /* divine.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B40677C21CBA9274008C1E3E /* Devine */ = {
+		B40677C21CBA9274008C1E3E /* divine */ = {
 			isa = PBXGroup;
 			children = (
 				B40677C31CBA9274008C1E3E /* AppDelegate.swift */,
@@ -81,15 +85,15 @@
 				B40677CE1CBA9274008C1E3E /* LaunchScreen.storyboard */,
 				B40677D11CBA9274008C1E3E /* Info.plist */,
 			);
-			path = Devine;
+			path = divine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B40677BF1CBA9274008C1E3E /* Devine */ = {
+		B40677BF1CBA9274008C1E3E /* divine */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B40677D41CBA9274008C1E3E /* Build configuration list for PBXNativeTarget "Devine" */;
+			buildConfigurationList = B40677D41CBA9274008C1E3E /* Build configuration list for PBXNativeTarget "divine" */;
 			buildPhases = (
 				B40677BC1CBA9274008C1E3E /* Sources */,
 				B40677BD1CBA9274008C1E3E /* Frameworks */,
@@ -100,9 +104,9 @@
 			);
 			dependencies = (
 			);
-			name = Devine;
-			productName = Devine;
-			productReference = B40677C01CBA9274008C1E3E /* Devine.app */;
+			name = divine;
+			productName = divine;
+			productReference = B40677C01CBA9274008C1E3E /* divine.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -120,7 +124,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B40677BB1CBA9274008C1E3E /* Build configuration list for PBXProject "Devine" */;
+			buildConfigurationList = B40677BB1CBA9274008C1E3E /* Build configuration list for PBXProject "divine" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -133,7 +137,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B40677BF1CBA9274008C1E3E /* Devine */,
+				B40677BF1CBA9274008C1E3E /* divine */,
 			);
 		};
 /* End PBXProject section */
@@ -160,6 +164,7 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SQLite.framework",
 			);
 			outputPaths = (
 			);
@@ -298,9 +303,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = Devine/Info.plist;
+				INFOPLIST_FILE = divine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = solutions.mve.Devine;
+				PRODUCT_BUNDLE_IDENTIFIER = solutions.mve.divine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -313,9 +318,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = Devine/Info.plist;
+				INFOPLIST_FILE = divine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = solutions.mve.Devine;
+				PRODUCT_BUNDLE_IDENTIFIER = solutions.mve.divine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -323,7 +328,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B40677BB1CBA9274008C1E3E /* Build configuration list for PBXProject "Devine" */ = {
+		B40677BB1CBA9274008C1E3E /* Build configuration list for PBXProject "divine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B40677D21CBA9274008C1E3E /* Debug */,
@@ -332,7 +337,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B40677D41CBA9274008C1E3E /* Build configuration list for PBXNativeTarget "Devine" */ = {
+		B40677D41CBA9274008C1E3E /* Build configuration list for PBXNativeTarget "divine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B40677D51CBA9274008C1E3E /* Debug */,

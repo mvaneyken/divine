@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B40677BF1CBA9274008C1E3E"
-               BuildableName = "Devine.app"
-               BlueprintName = "Devine"
-               ReferencedContainer = "container:Devine.xcodeproj">
+               BuildableName = "divine.app"
+               BlueprintName = "divine"
+               ReferencedContainer = "container:divine.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B40677BF1CBA9274008C1E3E"
-            BuildableName = "Devine.app"
-            BlueprintName = "Devine"
-            ReferencedContainer = "container:Devine.xcodeproj">
+            BuildableName = "divine.app"
+            BlueprintName = "divine"
+            ReferencedContainer = "container:divine.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B40677BF1CBA9274008C1E3E"
-            BuildableName = "Devine.app"
-            BlueprintName = "Devine"
-            ReferencedContainer = "container:Devine.xcodeproj">
+            BuildableName = "divine.app"
+            BlueprintName = "divine"
+            ReferencedContainer = "container:divine.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B40677BF1CBA9274008C1E3E"
-            BuildableName = "Devine.app"
-            BlueprintName = "Devine"
-            ReferencedContainer = "container:Devine.xcodeproj">
+            BuildableName = "divine.app"
+            BlueprintName = "divine"
+            ReferencedContainer = "container:divine.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

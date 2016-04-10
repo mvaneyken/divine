@@ -6,6 +6,11 @@
 	<dict>
 		<key>Devine.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
+		</dict>
+		<key>divine.xcscheme</key>
+		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
