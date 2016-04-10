@@ -8,26 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		B40677C41CBA9274008C1E3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40677C31CBA9274008C1E3E /* AppDelegate.swift */; };
-		B40677C61CBA9274008C1E3E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40677C51CBA9274008C1E3E /* FirstViewController.swift */; };
-		B40677C81CBA9274008C1E3E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40677C71CBA9274008C1E3E /* SecondViewController.swift */; };
+		B40677C61CBA9274008C1E3E /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40677C51CBA9274008C1E3E /* LibraryViewController.swift */; };
+		B40677C81CBA9274008C1E3E /* ScriptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40677C71CBA9274008C1E3E /* ScriptViewController.swift */; };
 		B40677CB1CBA9274008C1E3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B40677C91CBA9274008C1E3E /* Main.storyboard */; };
 		B40677CD1CBA9274008C1E3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B40677CC1CBA9274008C1E3E /* Assets.xcassets */; };
 		B40677D01CBA9274008C1E3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B40677CE1CBA9274008C1E3E /* LaunchScreen.storyboard */; };
 		B40677D91CBA94E2008C1E3E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B40677D71CBA94E2008C1E3E /* Alamofire.framework */; };
 		B40677DA1CBA94E2008C1E3E /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B40677D81CBA94E2008C1E3E /* SwiftyJSON.framework */; };
+		B4C4F7521CBAB56200306067 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C4F7511CBAB56200306067 /* Preferences.swift */; };
+		B4C4F7541CBADCF000306067 /* Script.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C4F7531CBADCF000306067 /* Script.swift */; };
+		B4C4F7561CBADE2E00306067 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C4F7551CBADE2E00306067 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B40677C01CBA9274008C1E3E /* Devine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Devine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B40677C31CBA9274008C1E3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B40677C51CBA9274008C1E3E /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		B40677C71CBA9274008C1E3E /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		B40677C51CBA9274008C1E3E /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
+		B40677C71CBA9274008C1E3E /* ScriptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptViewController.swift; sourceTree = "<group>"; };
 		B40677CA1CBA9274008C1E3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B40677CC1CBA9274008C1E3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B40677CF1CBA9274008C1E3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B40677D11CBA9274008C1E3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B40677D71CBA94E2008C1E3E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		B40677D81CBA94E2008C1E3E /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		B4C4F7511CBAB56200306067 /* Preferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Preferences.swift; path = Models/Preferences.swift; sourceTree = "<group>"; };
+		B4C4F7531CBADCF000306067 /* Script.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Script.swift; path = Models/Script.swift; sourceTree = "<group>"; };
+		B4C4F7551CBADE2E00306067 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Question.swift; path = Models/Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +71,11 @@
 			isa = PBXGroup;
 			children = (
 				B40677C31CBA9274008C1E3E /* AppDelegate.swift */,
-				B40677C51CBA9274008C1E3E /* FirstViewController.swift */,
-				B40677C71CBA9274008C1E3E /* SecondViewController.swift */,
+				B4C4F7531CBADCF000306067 /* Script.swift */,
+				B4C4F7551CBADE2E00306067 /* Question.swift */,
+				B40677C51CBA9274008C1E3E /* LibraryViewController.swift */,
+				B4C4F7511CBAB56200306067 /* Preferences.swift */,
+				B40677C71CBA9274008C1E3E /* ScriptViewController.swift */,
 				B40677C91CBA9274008C1E3E /* Main.storyboard */,
 				B40677CC1CBA9274008C1E3E /* Assets.xcassets */,
 				B40677CE1CBA9274008C1E3E /* LaunchScreen.storyboard */,
@@ -165,9 +174,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B40677C81CBA9274008C1E3E /* SecondViewController.swift in Sources */,
+				B40677C81CBA9274008C1E3E /* ScriptViewController.swift in Sources */,
 				B40677C41CBA9274008C1E3E /* AppDelegate.swift in Sources */,
-				B40677C61CBA9274008C1E3E /* FirstViewController.swift in Sources */,
+				B4C4F7521CBAB56200306067 /* Preferences.swift in Sources */,
+				B4C4F7561CBADE2E00306067 /* Question.swift in Sources */,
+				B4C4F7541CBADCF000306067 /* Script.swift in Sources */,
+				B40677C61CBA9274008C1E3E /* LibraryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +339,7 @@
 				B40677D61CBA9274008C1E3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

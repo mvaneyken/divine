@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  ScriptViewController.swift
 //  Devine
 //
 //  Created by Marc van Eyken on 2016-04-10.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class ScriptViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
