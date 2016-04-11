@@ -43,6 +43,10 @@ class LibraryViewController: UIViewController {
         getDefaults()
     }
 
+    override func viewDidDisappear(animated: Bool) {
+        script.toDatabase()
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
