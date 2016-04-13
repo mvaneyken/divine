@@ -9,10 +9,12 @@
 import UIKit
 
 class ScriptViewController: UIViewController {
+    var script = Script()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        script.loadDatabase()
     }
 
     override func didReceiveMemoryWarning() {

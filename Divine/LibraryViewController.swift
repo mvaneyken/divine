@@ -25,17 +25,19 @@ class LibraryViewController: UIViewController {
     
     @IBAction func getScript(sender: AnyObject) {
         let url: String = libraryURL.text! + "/api/scripts"
-        let question = Question()
         Alamofire.request(.GET, url)
             .responseJSON { response in
                 for (_, row) in JSON(response.result.value!) {
-                    question.id = row["id"].intValue
-                    question.sequence = row["sequence"].intValue
+                    let question = Question()
+                    question.id = row["id"].int64!
+                    question.sequence = row["sequence"].int64!
                     question.phrase = row["phrase"].string!
-                    question.code = row["code"].string!              }
-                    self.script.addQuestion(question)
+                    question.code = row["code"].string!
+                   self.script.addQuestion(question)
+                }
+                self.script.toDatabase()
             }
-    }
+     }
     
     override func viewDidLoad() {
         super.viewDidLoad()

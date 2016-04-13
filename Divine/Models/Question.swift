@@ -9,8 +9,8 @@
 import Foundation
 
 class Question {
-    var id: Int
-    var sequence: Int
+    var id: Int64
+    var sequence: Int64
     var phrase: String
     var code: String
     
@@ -21,10 +21,14 @@ class Question {
         self.code = String()
     }
     
-    init(id: Int, sequence: Int, phrase: String, code: String) {
+    init(id: Int64, sequence: Int64, phrase: String, code: String) {
         self.id = id
         self.sequence = sequence
         self.phrase = phrase
         self.code = code
+    }
+    
+    func to_print(msg: String) {
+        print("\(msg): <\(id), \(sequence), \(phrase), \(code)>")
     }
 }

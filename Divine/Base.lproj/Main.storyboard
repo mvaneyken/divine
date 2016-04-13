@@ -113,7 +113,7 @@
         <!--Script-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController storyboardIdentifier="script" id="8rJ-Kc-sve" customClass="ScriptViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="script" id="8rJ-Kc-sve" customClass="ScriptViewController" customModule="divine" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
